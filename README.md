@@ -2,7 +2,9 @@ CUTEr Problem Chooser
 =====================
 
 Classificator: Leandro Prudente - lfprudente@gmail.com
+
 Script to get files: Raniere Gaia Costa da Silva - r.gaia.cs@gmail.com
+
 README and organization: Abel Soares Siqueira - abel.s.siqueira@gmail.com
 
 Overview
