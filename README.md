@@ -1,7 +1,9 @@
 CUTEr Problem Chooser
 =====================
 
-Leandro Prudente - lfprudente@gmail.com
+Classificator: Leandro Prudente - lfprudente@gmail.com
+Script to get files: Raniere Gaia Costa da Silva - r.gaia.cs@gmail.com
+README and organization: Abel Soares Siqueira - abel.s.siqueira@gmail.com
 
 Overview
 --------
@@ -21,10 +23,9 @@ To use this routine you must have a text file called **CUTEr\_problems **
 with the names of all problems (line by line), and other text
 file called **CUTEr\_classification** with the classifications of
 all problems (line by line). 
-
-This package came with such files, but you may need to update them, if
-any new problems were added.
-You can get this information on the
+This package came with a script called get_files.sh that you
+can use to get these files.
+You can also get this information on the
 website http://www.cuter.rl.ac.uk/Problems/mastsif.shtml.
 A simple way is to copy all the table with name, files
 available and CUTEr classification, paste into a xlsx file
@@ -34,8 +35,16 @@ first and third columns.
 Installing and Running
 ----------------------
 
-First, edit classification.f to reflect your needs. Then
-simply compile the file classification.f. For instance, using
+First, edit classification.f to reflect your needs. 
+Then, use **get\_files.sh** to generate CUTEr\_problems and
+CUTEr\_classification. You will need wget and sed installed.
+Alternatively, you can see the recommendation on Overview
+to generate these files. To use the script
+
+    $ chmod a+x get_files.sh
+    $ ./get_files.sh
+
+Now simply compile the file classification.f. For instance, using
 gfortran:
 
     $ gfortran classification.f -o classification
